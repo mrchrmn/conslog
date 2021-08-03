@@ -15,6 +15,16 @@
                 "language": "javascript",
                 "path": "./snippets/snippets.code-snippets"
             }
+        ],
+        "keybindings": [
+            {
+                "key": "alt+shift+c",
+                "command": "editor.action.insertSnippet",
+                "when": "editorTextFocus",
+                "args": {
+                    "name": "Log selection"
+                }
+            }
         ]
     }
 }
