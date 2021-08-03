@@ -1,9 +1,9 @@
 {
-    "Log selection": {
+    "Conslog - log selection": {
         "prefix": "cl",
         "body": [
-            "${TM_SELECTED_TEXT/.*[^;]/console.log($0)/}"
+            "${TM_SELECTED_TEXT/[^;]*/console.log($0)/}"
             ],
-        "description": "Surround selection with console.log(). If the last selected character is a semicolon that stays outside the console.log()."
+        "description": "Surround selection up until the first semicolon with console.log()."
     }   
 }

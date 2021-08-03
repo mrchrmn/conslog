@@ -1,8 +1,8 @@
 {
     "name": "conslog",
     "displayName": "Conslog",
-    "description": "Add console.log() around selection.",
-    "version": "0.0.1",
+    "description": "Wrap console.log() around selection.",
+    "version": "1.0.0",
     "engines": {
         "vscode": "^1.58.0"
     },
@@ -22,9 +22,13 @@
                 "command": "editor.action.insertSnippet",
                 "when": "editorTextFocus",
                 "args": {
-                    "name": "Log selection"
+                    "name": "Conslog - log selection"
                 }
             }
         ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mrchrmn/conslog.git"
     }
 }
