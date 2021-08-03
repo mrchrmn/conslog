@@ -3,7 +3,7 @@
     "displayName": "Conslog",
     "description": "Wrap console.log() around selection.",
     "publisher": "mrchrmn",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "engines": {
         "vscode": "^1.58.0"
     },
