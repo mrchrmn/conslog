@@ -1,5 +1,9 @@
 # Change Log
 
+## [1.2.1]
+
+- Minor fix in description
+
 ## [1.2.0]
 
 - Added "Clear console.logs" feature.
