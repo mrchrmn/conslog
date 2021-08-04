@@ -5,10 +5,6 @@
 - Added "Undo log selection"
 - Small improvement to "Log selection": Empty lines in selection do no longer get empty console.logs.
 
-## [1.2.1]
-
-- Minor fix in description
-
 ## [1.2.0]
 
 - Added "Clear console.logs" feature.

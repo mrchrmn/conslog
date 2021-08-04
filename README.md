@@ -26,6 +26,8 @@ If multiple lines are selected, each line is treated like an individual selectio
 
 Removes `console.log` from selected lines, unwrapping the argument. Reverts the effect of _log selection_.
 
+![GIF animation showing Conslog at work](https://github.com/mrchrmn/conslog/blob/main/images/conslog13.gif?raw=true)
+
 ### Clear console logs
 
 > Prefix: ccl
