@@ -1,7 +1,7 @@
 {
     "name": "conslog",
     "displayName": "Conslog",
-    "description": "Wrap console.log() around selection.",
+    "description": "For a better console.log() experience.",
     "publisher": "mrchrmn",
     "version": "1.2.0",
     "engines": {
