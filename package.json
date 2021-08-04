@@ -3,7 +3,7 @@
     "displayName": "Conslog",
     "description": "For a better console.log() experience.",
     "publisher": "mrchrmn",
-    "version": "1.2.1",
+    "version": "1.3.0",
     "engines": {
         "vscode": "^1.58.0"
     },
