@@ -1,6 +1,6 @@
 # Conslog - for a better console.log() experience.
 
-_Conslog_ is a collection of VSCode snippets that add or remove `console.logs()` to and from selected code. 
+_Conslog_ is a collection of VSCode snippets that add or remove `console.log`s to and from selected code. 
 
 ## Features
 
@@ -12,9 +12,9 @@ _Conslog_ is a collection of VSCode snippets that add or remove `console.logs()`
 
 The idea behind this snippet was to make it easier to log the test cases that are sometimes provided with coding problems.
 
-It wraps the selection in `console.logs()`. But only the part of the selection until the first semicolon is getting wrapped, the rest remains as is. 
+It wraps the selection in `console.log`s. But only the part of the selection until the first semicolon is getting wrapped, the rest remains as is. 
 
-If multiple lines are selected, each line is treated like an individual selection, adding multiple `console.log()`s.
+If multiple lines are selected, each line is treated like an individual selection, adding multiple `console.log`s.
 
 ![GIF animation showing Conslog at work](https://github.com/mrchrmn/conslog/blob/main/images/conslog11.gif?raw=true)
 
@@ -34,7 +34,7 @@ Removes `console.log` from selected lines, unwrapping the argument. Reverts the 
 >
 > Keyboard shortcut: Alt-Shift-D
 
-If you are a fan of `console.log()` debugging, chances are that your code has plenty of lines temporarily logging variables. Get rid of them in one go with this snippet. 
+If you are a fan of `console.log` debugging, chances are that your code has plenty of lines temporarily logging variables. Get rid of them in one go with this snippet. 
 
 It deletes every line that starts with `console.log` from the selection. Note: It is not the reverse of _Log selection_.
 
