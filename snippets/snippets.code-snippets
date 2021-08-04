@@ -5,5 +5,12 @@
             "${TM_SELECTED_TEXT/^[^;]*/console.log($0)/gm}"
             ],
         "description": "Surround selection up until the first semicolon with console.log()."
+    },
+    "Conslog - clear console.logs": {
+        "prefix": "ccl",
+        "body": [
+            "${TM_SELECTED_TEXT/^ *console\\.log\\(.*\n?//gm}"
+            ],
+        "description": "Removes every line that starts with console.log from the selection."
     }   
 }

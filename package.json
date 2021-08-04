@@ -25,6 +25,14 @@
                 "args": {
                     "name": "Conslog - log selection"
                 }
+            },
+            {
+                "key": "alt+shift+d",
+                "command": "editor.action.insertSnippet",
+                "when": "editorTextFocus",
+                "args": {
+                    "name": "Conslog - clear console.logs"
+                }
             }
         ]
     },
