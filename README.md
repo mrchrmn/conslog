@@ -1,6 +1,6 @@
 # Conslog - for a better console.log() experience.
 
-_Conslog_ is a collection of VSCode snippets that either add or remove `console.logs()` to selected code. 
+_Conslog_ is a collection of VSCode snippets that add or remove `console.logs()` to and from selected code. 
 
 ## Features
 
@@ -17,6 +17,14 @@ It wraps the selection in `console.logs()`. But only the part of the selection u
 If multiple lines are selected, each line is treated like an individual selection, adding multiple `console.log()`s.
 
 ![GIF animation showing Conslog at work](https://github.com/mrchrmn/conslog/blob/main/images/conslog11.gif?raw=true)
+
+### Undo _log selection_
+
+> Prefix: ucl
+>
+> Keyboard shortcut: Alt-Shift-U
+
+Removes `console.log` from selected lines, unwrapping the argument. Reverts the effect of _log selection_.
 
 ### Clear console logs
 

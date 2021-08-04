@@ -33,6 +33,14 @@
                 "args": {
                     "name": "Conslog - clear console.logs"
                 }
+            },
+            {
+                "key": "alt+shift+u",
+                "command": "editor.action.insertSnippet",
+                "when": "editorTextFocus",
+                "args": {
+                    "name": "Conslog - undo log selection"
+                }
             }
         ]
     },
