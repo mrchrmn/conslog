@@ -2,7 +2,7 @@
     "Conslog - log selection": {
         "prefix": "cl",
         "body": [
-            "${TM_SELECTED_TEXT/^[^;\n\\/]+/console.log($0)/gm}"
+            "${TM_SELECTED_TEXT/^[^;\n\r\\/]+/console.log($0)/gm}"
         ],
         "description": "Surround selection up until the first semicolon with console.log()."
     },
@@ -13,11 +13,18 @@
         ],
         "description": "Removes console.log from selected lines."
     },
-    "Conslog - clear console.logs": {
-        "prefix": "ccl",
+    "Conslog - delete console.logs": {
+        "prefix": "dcl",
         "body": [
-            "${TM_SELECTED_TEXT/^ *console\\.log\\(.*\n?//gm}"
+            "${TM_SELECTED_TEXT/^ *console\\.log\\(.*(\r\n|\r|\n)?//gm}"
         ],
         "description": "Removes every line that starts with console.log from the selection."
+    },
+    "Conslog - log variable": {
+        "prefix": "clv",
+        "body": [
+            "console.log(${1/(.*)/\"\\n== $1 ==\\n\", $1, \"\\n\"/});$0"
+        ],
+        "description": "Inserts a console.log() line. Enter a variable name, then TAB to move the next line. The variable name and the value will be logged."
     }
 }
