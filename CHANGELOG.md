@@ -1,5 +1,8 @@
 # Change Log
 
+## [1.3.3]
+-- Small improvement to "Log selection": Comment lines in selection do no longer get logged.
+
 ## [1.3.0]
 
 - Added "Undo log selection"
