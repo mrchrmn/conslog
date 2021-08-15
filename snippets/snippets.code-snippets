@@ -2,9 +2,9 @@
     "Conslog - log selection": {
         "prefix": "cl",
         "body": [
-            "${TM_SELECTED_TEXT/^[^;\n\r\\/]+/console.log($0)/gm}"
+            "${TM_SELECTED_TEXT/^(?!\/\/)( *)(.*);/console.log($2);/gm}"
         ],
-        "description": "Surround selection up until the first semicolon with console.log()."
+        "description": "Surround selection up until the last semicolon with console.log(). Skips empty lines and comment lines."
     },
     "Conslog - undo log selection": {
         "prefix": "ucl",

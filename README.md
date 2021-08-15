@@ -10,11 +10,13 @@ _Conslog_ is a collection of VSCode snippets that add or remove `console.log`s t
 >
 > Keyboard shortcut: Alt-Shift-C
 
-The idea behind this snippet was to make it easier to log the test cases that are sometimes provided with coding problems.
+The idea behind this snippet was to make it easier to log the test cases that are sometimes provided with coding problems, eg. on Codewars or Leetcode.
 
-It wraps the selection in `console.log`s. But only the part of the selection until the first semicolon is getting wrapped, the rest remains as is.
+It wraps the selection in `console.log`s. But only the part of the selection until the _last_ semicolon is getting wrapped, the rest remains as is.
 
 If multiple lines are selected, each line is treated like an individual selection, adding multiple `console.log`s.
+
+Empty lines and comment lines are skipped. 
 
 ![GIF animation showing Conslog at work](https://github.com/mrchrmn/conslog/blob/main/images/conslogLogSelection.gif?raw=true)
 
@@ -50,11 +52,6 @@ It deletes every line that starts with `console.log` from the selection, so be c
 
 ![GIF animation showing Conslog at work](https://github.com/mrchrmn/conslog/blob/main/images/conslogDeleteConsoleLogs.gif?raw=true)
 
-## Known issues
+## Limitations
 
-- _Log selection_ does not work properly if the test cases include the characters `/` or `;`, or line breaks.
-- Spaces at the beginning of selected lines are included in the `console.log` parentheses.
-
-![GIF animation showing Conslog at work](https://github.com/mrchrmn/conslog/blob/main/images/conslogIssues.gif?raw=true)
-
-I'm working on it.
+_Log selection_ encloses everything up to the last semicolon in a line in a `console.log`. It does not distinguish between semicolons in code and those in comments. If there semicolons in comments after the code (on the same line), the comment up until that semicolon will be enclosed as well, subsequently breaking the code. 
