@@ -34,7 +34,7 @@ Removes `console.log` from selected lines, unwrapping the argument. Reverts the 
 >
 > Keyboard shortcut: Alt-Shift-L
 
-If you are a fan of `console.log` debugging, this feature is four you. Enter the variable name, and then TAB to the next line. The variable name and value will be logged in a nicely formatted way.
+If you are a fan of `console.log` debugging, this feature is for you. Enter the variable name, and then TAB to the end of the line. The variable name and value will be logged in a nicely formatted way.
 
 ![GIF animation showing Conslog at work](https://github.com/mrchrmn/conslog/blob/main/images/conslogLogVariable.gif?raw=true)
 
@@ -44,7 +44,7 @@ If you are a fan of `console.log` debugging, this feature is four you. Enter the
 >
 > Keyboard shortcut: Alt-Shift-D
 
-But if you are indeed a fan of `console.log` debugging, chances are that your code now has plenty of lines temporarily logging variables. Get rid of them in one go with this snippet.
+So, if you _really_ are indeed a fan of `console.log` debugging, chances are that your code now has plenty of lines temporarily logging variables. Get rid of them in one go with this snippet.
 
 It deletes every line that starts with `console.log` from the selection, so be careful. Note: This is not the reverse of _Log selection_.
 
