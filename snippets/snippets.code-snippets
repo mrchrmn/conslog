@@ -2,11 +2,25 @@
     "Conslog - log selection": {
         "prefix": "cl",
         "body": [
-            "${TM_SELECTED_TEXT/^(?!\/\/)( *)(.*);/console.log($2);/gm}"
+            "${TM_SELECTED_TEXT/^(?!\\/\\/)([^\r\n][^;\r\n]*)(;)?(.*)$/console.log($1);$3/gm}"
         ],
-        "description": "Surround selection up until the last semicolon with console.log(). Skips empty lines and comment lines."
+        "description": "Surround selection up until the first semicolon with console.log();. Leaves content after last semicolon untouched."
     },
-    "Conslog - undo log selection": {
+    "Conslog - log lines to last semicolon": {
+        "prefix": "lls",
+        "body": [
+            "${TM_SELECTED_TEXT/^(?!\\/\\/)( *)(.*);/console.log($2);/gm}"
+        ],
+        "description": "Surround selection up until the last semicolon per line with console.log();. Skips empty lines and comment lines. Leaves content after last semicolon untouched."
+    },
+    "Conslog - log lines to last closing bracket": {
+        "prefix": "llb",
+        "body": [
+            "${TM_SELECTED_TEXT/^(?!\\/\\/)( *)(.*)\\)/console.log($2));/gm}"
+        ],
+        "description": "Surround selection up until the last closing bracket with console.log();. Skips empty lines and comment lines. Retains content after last closing bracket."
+    },
+    "Conslog - undo log": {
         "prefix": "ucl",
         "body": [
             "${TM_SELECTED_TEXT/console\\.log\\(|(?<=^ *console\\.log\\(.*)\\)(?=;)//gm}"
