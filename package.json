@@ -27,6 +27,22 @@
                 }
             },
             {
+                "key": "alt+shift+,",
+                "command": "editor.action.insertSnippet",
+                "when": "editorTextFocus",
+                "args": {
+                    "name": "Conslog - log lines to last semicolon"
+                }
+            },
+            {
+                "key": "alt+shift+b",
+                "command": "editor.action.insertSnippet",
+                "when": "editorTextFocus",
+                "args": {
+                    "name": "Conslog - log lines to last closing bracket"
+                }
+            },
+            {
                 "key": "alt+shift+d",
                 "command": "editor.action.insertSnippet",
                 "when": "editorTextFocus",
