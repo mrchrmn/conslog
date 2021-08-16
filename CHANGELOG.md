@@ -1,5 +1,8 @@
 # Change Log
 
+## [1.5.2]
+- Added configuration default: code suggestions are now automatically available in JavaScript snippets to make "_Log variable_" more useful.
+
 ## [1.5.0]
 - Change: "_Log selection_" now always adds semicolon after `console.log`. 
 - Fix: "_Log selection_" can now handle `/` in the code.
