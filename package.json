@@ -11,6 +11,11 @@
         "Snippets"
     ],
     "contributes": {
+        "configurationDefaults": {
+            "[javascript]": {
+                "editor.suggest.snippetsPreventQuickSuggestions": false
+            }
+        },
         "snippets": [
             {
                 "language": "javascript",
