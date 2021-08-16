@@ -29,12 +29,12 @@ Skips empty lines and comment lines.
 ```js
 mySolution("My favourite symbol is the ;");
 ```
-If the selection includes semicolons, use _log lines to last semicolon_ instead.
+If the selection includes semicolons, use "_Log lines to last semicolon_" instead.
 
 ```js
 mySolution(testCase) // What? No semicolon?
 ```
-If the code doesn't end in a semicolon but in a closing bracket _AND_ is followed by a comment on the same line, use use _log lines to last closed bracket_. 
+If the code doesn't end in a semicolon but in a closing bracket _AND_ is followed by a comment on the same line, use use "_Log lines to last closing bracket_". 
 
 ### Log lines to last semicolon
 
@@ -42,14 +42,7 @@ If the code doesn't end in a semicolon but in a closing bracket _AND_ is followe
 >
 > Keyboard shortcut: Alt-Shift-,
 
-Like _log selection_ but wraps until the last semicolon instead. 
-
-#### Limitations
-
-Does not work if the code is followed by a comment on the same line that includes a semicolon:
-```js
-mySolution("My favourite symbol is the ;"); // Comment with ; semicolon
-```
+Like "_Log selection_" but wraps until the *last* semicolon instead. 
 
 ### Log lines to last closing bracket
 
@@ -57,12 +50,7 @@ mySolution("My favourite symbol is the ;"); // Comment with ; semicolon
 >
 > Keyboard shortcut: Alt-Shift-B
 
-#### Limitations
-
-Does not work if the code is followed by a comment on the same line that includes a closing bracket:
-```js
-mySolution(testCase) // Comment with ) closing bracket
-```
+Like "_Log selection_" but wraps until the *last closing bracket* instead. 
 
 ### Undo logs
 
@@ -70,7 +58,7 @@ mySolution(testCase) // Comment with ) closing bracket
 >
 > Keyboard shortcut: Alt-Shift-U
 
-Removes `console.log` from selected lines, unwrapping the argument. Reverts the effect of _log lines ..._.
+Removes `console.log` from selected lines, unwrapping the argument. Reverts the effect of "_Log selection_" or "_Log lines ..._".
 
 ![GIF animation showing Conslog at work](https://github.com/mrchrmn/conslog/blob/main/images/conslogUndoLogSelection.gif?raw=true)
 
@@ -92,10 +80,18 @@ If you are a fan of `console.log` debugging, this feature is for you. Enter the 
 
 So, if you _really_ are indeed a fan of `console.log` debugging, chances are that your code now has plenty of lines temporarily logging variables. Get rid of them in one go with this snippet.
 
-It deletes every line that starts with `console.log` from the selection, so be careful. Note: This is not the reverse of _Log selection_.
+It deletes every line that starts with `console.log` from the selection, so be careful. Note: This is not the reverse of "_Log selection_".
 
 ![GIF animation showing Conslog at work](https://github.com/mrchrmn/conslog/blob/main/images/conslogDeleteConsoleLogs.gif?raw=true)
 
 ## Known Issues
 
-See _Limitations_ for individual features.
+"_Log lines to last semicolon_" does not work if the code is followed by a comment on the same line that includes a semicolon:
+```js
+mySolution("My favourite symbol is the ;"); // Comment with ; semicolon
+```
+
+"_Log lines to last closing bracket_" does not work if the code is followed by a comment on the same line that includes a closing bracket:
+```js
+mySolution(testCase) // Comment with ) closing bracket
+```
