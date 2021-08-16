@@ -2,6 +2,12 @@
 
 _Conslog_ is a collection of VSCode snippets that add or remove `console.log`s to and from selected code.
 
+The idea behind it was to make it easier to log the test cases that are sometimes provided with coding problems, eg. on Codewars or Leetcode, for example
+```js
+mySolution(testCase); // => true
+mySolution("testCase"); // => "Casetest"
+```
+
 ## Features
 
 ### Log selection
@@ -10,23 +16,61 @@ _Conslog_ is a collection of VSCode snippets that add or remove `console.log`s t
 >
 > Keyboard shortcut: Alt-Shift-C
 
-The idea behind this snippet was to make it easier to log the test cases that are sometimes provided with coding problems, eg. on Codewars or Leetcode.
+It wraps the selection in `console.log`s. But only the part of the selection **until the first semicolon** is getting wrapped, the rest remains as is.
 
-It wraps the selection in `console.log`s. But only the part of the selection until the _last_ semicolon is getting wrapped, the rest remains as is.
+If multiple lines are selected, each line is treated like an individual selection, adding multiple `console.log`s. 
 
-If multiple lines are selected, each line is treated like an individual selection, adding multiple `console.log`s.
-
-Empty lines and comment lines are skipped. 
+Skips empty lines and comment lines.
 
 ![GIF animation showing Conslog at work](https://github.com/mrchrmn/conslog/blob/main/images/conslogLogSelection.gif?raw=true)
 
-### Undo _log selection_
+#### Limitations
+
+```js
+mySolution("My favourite symbol is the ;");
+```
+If the selection includes semicolons, use _log lines to last semicolon_ instead.
+
+```js
+mySolution(testCase) // What? No semicolon?
+```
+If the code doesn't end in a semicolon but in a closing bracket _AND_ is followed by a comment on the same line, use use _log lines to last closed bracket_. 
+
+### Log lines to last semicolon
+
+> Prefix: lls
+>
+> Keyboard shortcut: Alt-Shift-;
+
+Like _log selection_ but wraps until the last semicolon instead. 
+
+#### Limitations
+
+Does not work if the code is followed by a comment on the same line that includes a semicolon:
+```js
+mySolution("My favourite symbol is the ;"); // Comment with ; semicolon
+```
+
+### Log lines to last closing bracket
+
+> Prefix: llb
+>
+> Keyboard shortcut: Alt-Shift-B
+
+#### Limitations
+
+Does not work if the code is followed by a comment on the same line that includes a closing bracket:
+```js
+mySolution(testCase) // Comment with ) closing bracket
+```
+
+### Undo logs
 
 > Prefix: ucl
 >
 > Keyboard shortcut: Alt-Shift-U
 
-Removes `console.log` from selected lines, unwrapping the argument. Reverts the effect of _log selection_.
+Removes `console.log` from selected lines, unwrapping the argument. Reverts the effect of _log lines ..._.
 
 ![GIF animation showing Conslog at work](https://github.com/mrchrmn/conslog/blob/main/images/conslogUndoLogSelection.gif?raw=true)
 
@@ -42,7 +86,7 @@ If you are a fan of `console.log` debugging, this feature is for you. Enter the 
 
 ### Delete console logs
 
-> Prefix: dcl <- changed!
+> Prefix: dcl
 >
 > Keyboard shortcut: Alt-Shift-D
 
@@ -52,6 +96,6 @@ It deletes every line that starts with `console.log` from the selection, so be c
 
 ![GIF animation showing Conslog at work](https://github.com/mrchrmn/conslog/blob/main/images/conslogDeleteConsoleLogs.gif?raw=true)
 
-## Limitations
+## Known Issues
 
-_Log selection_ encloses everything up to the last semicolon in a line in a `console.log`. It does not distinguish between semicolons in code and those in comments. If there semicolons in comments after the code (on the same line), the comment up until that semicolon will be enclosed as well, subsequently breaking the code. 
+See _Limitations_ for individual features.
