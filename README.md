@@ -2,7 +2,7 @@
 
 _Conslog_ is a collection of VSCode snippets that add or remove `console.log`s to and from selected code.
 
-The idea behind it was to make it easier to log the test cases that are sometimes provided with coding problems, eg. on Codewars or Leetcode, for example
+The idea behind it was to make it easier to log the test cases that are sometimes provided with coding problems, eg. on Codewars or Leetcode, for example like this:
 ```js
 mySolution(testCase); // => true
 mySolution("testCase"); // => "Casetest"
@@ -40,7 +40,7 @@ If the code doesn't end in a semicolon but in a closing bracket _AND_ is followe
 
 > Prefix: lls
 >
-> Keyboard shortcut: Alt-Shift-;
+> Keyboard shortcut: Alt-Shift-,
 
 Like _log selection_ but wraps until the last semicolon instead. 
 
