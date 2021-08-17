@@ -1,5 +1,8 @@
 # Change Log
 
+## [1.5.4]
+- Ahem... removed configuration default as it broke "_Log console_".
+
 ## [1.5.2]
 - Added configuration default: code suggestions are now automatically available in JavaScript snippets to make "_Log variable_" more useful.
 
