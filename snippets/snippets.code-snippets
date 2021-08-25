@@ -37,7 +37,7 @@
     "Conslog - log variable": {
         "prefix": "clv",
         "body": [
-            "console.log(${1/(.*)/\"\\n== $1 ==\\n\", $1, \"\\n\"/});$0"
+            "console.log(${1/(.*)/\"\\n== $1 ==\\n\" + $1 + \"\\n\"/});$0"
         ],
         "description": "Inserts a console.log() line. Enter a variable name, then TAB to move the next line. The variable name and the value will be logged."
     }

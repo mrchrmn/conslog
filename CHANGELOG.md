@@ -1,5 +1,8 @@
 # Change Log
 
+## [1.5.5]
+- Minor change to "_Log variable_" formatting: removed the unnecessary indent.
+
 ## [1.5.4]
 - Ahem... removed configuration default as it broke "_Log console_".
 
