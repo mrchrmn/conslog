@@ -1,5 +1,8 @@
 # Change Log
 
+## [1.6.0]
+- Added basic _Wrap single console.log around selection_ which can wrap multiple lines. 
+
 ## [1.5.5]
 - Minor change to "_Log variable_" formatting: removed the unnecessary indent.
 

@@ -84,6 +84,15 @@ If it turns out that you _really_ like `console.log` debugging, chances are that
 
 It deletes every line that starts with `console.log` from the selection, so be careful. Note: This is not the reverse of "_Log selection_".
 
+
+### Wrap single `console.log()` around selection
+
+> Prefix: wsc
+>
+> Keyboard shortcut: Alt-Shift-W
+
+Wraps a single `console.log()` around the selection, even if that selection spans multiple lines. Comments, brackets and semicolons get wrapped regardless.
+
 ## Known Issues
 
 "_Log lines to last semicolon_" does not work if the code is followed by a comment on the same line that includes a semicolon:

@@ -66,6 +66,14 @@
                 "args": {
                     "name": "Conslog - log variable"
                 }
+            },
+            {
+                "key": "alt+shift+w",
+                "command": "editor.action.insertSnippet",
+                "when": "editorTextFocus",
+                "args": {
+                    "name": "Conslog - wrap single console.log() around selection"
+                }
             }
         ]
     },

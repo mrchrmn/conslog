@@ -20,6 +20,13 @@
         ],
         "description": "Surround selection up until the last closing bracket with console.log();. Skips empty lines and comment lines. Retains content after last closing bracket."
     },
+    "Conslog - wrap single console.log() around selection": {
+        "prefix": "wsc",
+        "body": [
+            "${TM_SELECTED_TEXT/.*/console.log($0))/s}"
+        ],
+        "description": "Surround selection up until the last closing bracket with console.log();. Skips empty lines and comment lines. Retains content after last closing bracket."
+    },
     "Conslog - undo log": {
         "prefix": "ucl",
         "body": [
