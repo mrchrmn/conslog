@@ -1,5 +1,8 @@
 # Change Log
 
+## [1.6.1]
+- Minor change to "_Log variable_": properly logs objects now.  
+
 ## [1.6.0]
 - Added basic _Wrap single console.log around selection_ which can wrap multiple lines. 
 
