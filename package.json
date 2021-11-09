@@ -3,7 +3,7 @@
     "displayName": "Conslog",
     "description": "A better way to console.log() selection, lines, variables and more.",
     "publisher": "mrchrmn",
-    "version": "1.6.2",
+    "version": "1.6.3",
     "engines": {
         "vscode": "^1.58.0"
     },
