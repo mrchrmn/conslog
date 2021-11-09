@@ -3,7 +3,7 @@
     "displayName": "Conslog",
     "description": "For a better console.log() experience in JavaScript, React etc. Wrap, log and remove to your heart's content.",
     "publisher": "mrchrmn",
-    "version": "1.6.1",
+    "version": "1.6.2",
     "engines": {
         "vscode": "^1.58.0"
     },
