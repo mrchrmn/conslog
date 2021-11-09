@@ -1,7 +1,7 @@
 {
     "name": "conslog",
     "displayName": "Conslog",
-    "description": "For a better console.log() experience in JavaScript, React etc. Wrap, log and remove to your heart's content.",
+    "description": "A better way to console.log() selection, lines, variables and more.",
     "publisher": "mrchrmn",
     "version": "1.6.2",
     "engines": {
