@@ -8,6 +8,8 @@ mySolution(testCase); // => true
 mySolution("testCase"); // => "Casetest"
 ```
 
+But while it had the learner in mind, it is useful for experienced developers, too.
+
 ## Features
 
 ### Log selection

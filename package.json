@@ -1,7 +1,7 @@
 {
     "name": "conslog",
     "displayName": "Conslog",
-    "description": "For a better console.log() experience.",
+    "description": "For a better console.log() experience in JavaScript, React etc. Wrap, log and remove to your heart's content.",
     "publisher": "mrchrmn",
     "version": "1.6.1",
     "engines": {
@@ -80,5 +80,6 @@
     "repository": {
         "type": "git",
         "url": "https://github.com/mrchrmn/conslog.git"
-    }
+    },
+    "devDependencies": {}
 }
