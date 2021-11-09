@@ -1,7 +1,7 @@
 {
     "name": "conslog",
     "displayName": "Conslog",
-    "description": "A better way to console.log() selection, lines, variables and more.",
+    "description": "console.log() selection, lines, or variables. Undo or delete console.logs.",
     "publisher": "mrchrmn",
     "version": "1.6.3",
     "engines": {
