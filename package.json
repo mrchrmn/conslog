@@ -1,13 +1,13 @@
 {
     "name": "conslog",
-    "displayName": "Conslog",
-    "description": "console.log() selection, lines, or variables. Undo or delete console.logs.",
+    "displayName": "Conslog - Console.log snippets",
+    "description": "console.log selection, lines, or variables. Undo or delete console.logs.",
     "publisher": "mrchrmn",
     "version": "1.6.4",
     "engines": {
         "vscode": "^1.58.0"
     },
-    "icon": "conslog_icon.png",
+    "icon": "conslog_icon_new.png",
     "categories": [
         "Snippets"
     ],
