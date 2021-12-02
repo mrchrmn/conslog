@@ -1,5 +1,8 @@
 # Change Log
 
+## [1.6.6]
+- Works with TypeScript now.
+
 ## [1.6.1]
 - Minor change to "_Log variable_": properly logs objects now.  
 
